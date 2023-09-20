@@ -23,6 +23,10 @@ app.get("/", (req, res) => {
   res.json({ message: "Server is up and running" });
 });
 
+app.get("/api", (req, res) => {
+  res.send("hello");
+});
+
 console.log(process.env.PORT);
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
