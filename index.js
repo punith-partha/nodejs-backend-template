@@ -19,12 +19,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //simple route
-app.get("/route", (req, res) => {
+app.get("/", (req, res) => {
   res.json({ message: "Server is up and running" });
 });
 
 app.get("/api", (req, res) => {
-  res.send("hello");
+  res.json({ message: "hehe" });
 });
 
 console.log(process.env.PORT);
