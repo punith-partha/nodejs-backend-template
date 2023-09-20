@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //simple route
-app.get("/", (req, res) => {
+app.get("/route", (req, res) => {
   res.json({ message: "Server is up and running" });
 });
 
